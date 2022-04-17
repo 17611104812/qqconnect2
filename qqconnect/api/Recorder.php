@@ -15,10 +15,7 @@ class Recorder{
         $this->error = new ErrorCase();
 
         //-------读取配置文件
-        //$incFileContents = file(ROOT."comm/inc.php");
-        //$incFileContents = config();
-        $incFileContents = '{"appid":"appid","appkey":"appkey","callback":"example/oauth/callback.php","scope":"get_user_info","errorReport":true,"storageType":"file","host":"localhost","user":"root","password":"root","database":"test"}';
-        $this->inc = json_decode($incFileContents);
+        $this->inc = config('society');
         if(empty($this->inc)){
             $this->error->showError("20001");
         }
