@@ -3,7 +3,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "jie\\qqconnect\\api": "qqconnect/api"
+            "jie\\qqconnect\\api\\": "qqconnect/api"
         },
         "files": [
             "qqconnect/comm/config.php",
